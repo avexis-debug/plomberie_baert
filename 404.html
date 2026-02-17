@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page introuvable | TS Pro-Tech</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/jpeg" href="public/Favicon_TS.jpg">
+
+    <!-- Tailwind & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'logo-cream': '#f2e1c1',
+              'logo-green': '#14532d',
+              'logo-dark-green': '#064e3b',
+              'bg-soft': '#fdfaf5',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-bg-soft text-logo-dark-green">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-logo-cream py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/">
+                        <img src="public/logo-green.png" alt="TS Pro-Tech Logo" class="h-12 w-auto">
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Accueil</a>
+                        <a href="/travaux-interieurs-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Travaux Intérieurs</a>
+                        <a href="/travaux-exterieurs-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Travaux Extérieurs</a>
+                        <a href="/realisations-travaux-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Réalisations</a>
+                        <a href="/devis-gratuit-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-logo-dark-green p-2">
+                        <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-logo-cream shadow-xl absolute top-full left-0 w-full border-b border-logo-dark-green/10">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Accueil</a>
+                <a href="/travaux-interieurs-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Travaux Intérieurs</a>
+                <a href="/travaux-exterieurs-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Travaux Extérieurs</a>
+                <a href="/realisations-travaux-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Réalisations</a>
+                <a href="/devis-gratuit-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="min-h-[80vh] flex items-center justify-center px-4">
+            <div class="text-center max-w-lg">
+                <p class="text-[120px] md:text-[180px] font-bold text-logo-cream leading-none select-none">404</p>
+                <h1 class="text-2xl md:text-4xl font-bold text-logo-dark-green tracking-tighter uppercase -mt-4 md:-mt-8 mb-4">Page introuvable</h1>
+                <p class="text-logo-dark-green/60 font-medium mb-10 leading-relaxed">
+                    La page que vous cherchez n'existe pas ou a été déplacée.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/" class="px-8 py-4 bg-logo-green text-logo-cream font-semibold uppercase tracking-widest text-sm rounded-md transition-all hover:bg-logo-dark-green text-center shadow-lg">
+                        Retour à l'accueil
+                    </a>
+                    <a href="/devis-gratuit-liege" class="px-8 py-4 bg-white border border-logo-green/20 text-logo-dark-green font-semibold text-sm rounded-md hover:border-logo-green transition-all text-center shadow-sm">
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-logo-cream/30 text-logo-dark-green pt-12 pb-8 md:pt-20 md:pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 md:gap-12 md:mb-16">
+                <div class="flex flex-col">
+                    <img src="public/logo-green.png" alt="TS Pro-Tech" class="h-16 w-auto mb-6">
+                    <p class="text-logo-dark-green/60 text-sm font-medium leading-relaxed">
+                        Votre partenaire aménagement & finition à Liège. Un rendu propre, net et professionnel.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Navigation</h4>
+                    <ul class="space-y-3 text-logo-dark-green/70 font-medium text-sm">
+                        <li><a href="/" class="hover:text-logo-green transition-colors">Accueil</a></li>
+                        <li><a href="/travaux-interieurs-liege" class="hover:text-logo-green transition-colors">Travaux Intérieurs</a></li>
+                        <li><a href="/travaux-exterieurs-liege" class="hover:text-logo-green transition-colors">Travaux Extérieurs</a></li>
+                        <li><a href="/realisations-travaux-liege" class="hover:text-logo-green transition-colors">Réalisations</a></li>
+                        <li><a href="/devis-gratuit-liege" class="hover:text-logo-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Contact</h4>
+                    <ul class="space-y-3 text-logo-dark-green/70 font-medium text-sm">
+                        <li><a href="tel:+32460961885" class="hover:text-logo-green transition-colors">+32 460 96 18 85</a></li>
+                        <li><a href="mailto:service.tsprotech@gmail.com" class="hover:text-logo-green transition-colors">service.tsprotech@gmail.com</a></li>
+                        <li>Liège et alentour</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Zone d'intervention</h4>
+                    <ul class="space-y-2 text-logo-dark-green/70 font-medium text-sm">
+                        <li>Liège</li>
+                        <li>Seraing</li>
+                        <li>Verviers</li>
+                        <li>Herstal</li>
+                        <li>Ans</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-6 md:pt-10 border-t border-logo-dark-green/10 text-center space-y-4">
+                <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-[10px] font-semibold tracking-[0.1em] text-logo-dark-green/30">
+                    <a href="/mentions-legales" class="hover:text-logo-dark-green transition-colors">Mentions légales</a>
+                    <span class="text-logo-dark-green/15">|</span>
+                    <a href="/politique-confidentialite" class="hover:text-logo-dark-green transition-colors">Confidentialité</a>
+                    <span class="text-logo-dark-green/15">|</span>
+                    <a href="/politique-cookies" class="hover:text-logo-dark-green transition-colors">Cookies</a>
+                </div>
+                <div id="footer-year" class="text-logo-dark-green/25 text-[10px] uppercase font-semibold tracking-[0.2em]"></div>
+                <p class="text-logo-dark-green/20 text-[9px] font-medium">Site créé par <a href="https://siteexpress24.com" target="_blank" rel="noopener noreferrer" class="hover:text-logo-dark-green/40 transition-colors underline">siteexpress24.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
