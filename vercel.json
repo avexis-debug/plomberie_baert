@@ -4,14 +4,14 @@
   "framework": null,
   "cleanUrls": true,
   "redirects": [
-    { "source": "/plomberie", "destination": "/plomberie-bruxelles", "permanent": true },
-    { "source": "/parquet", "destination": "/parquet-bruxelles", "permanent": true },
-    { "source": "/batiment", "destination": "/batiment-bruxelles", "permanent": true },
-    { "source": "/realisations", "destination": "/realisations-bruxelles", "permanent": true },
-    { "source": "/contact", "destination": "/devis-gratuit-bruxelles", "permanent": true },
-    { "source": "/travaux-interieurs-liege", "destination": "/plomberie-bruxelles", "permanent": true },
-    { "source": "/travaux-exterieurs-liege", "destination": "/batiment-bruxelles", "permanent": true },
-    { "source": "/realisations-travaux-liege", "destination": "/realisations-bruxelles", "permanent": true },
-    { "source": "/devis-gratuit-liege", "destination": "/devis-gratuit-bruxelles", "permanent": true }
+    { "source": "/plomberie-bruxelles", "destination": "/", "permanent": true },
+    { "source": "/parquet-bruxelles", "destination": "/", "permanent": true },
+    { "source": "/batiment-bruxelles", "destination": "/", "permanent": true },
+    { "source": "/realisations-bruxelles", "destination": "/", "permanent": true },
+    { "source": "/devis-gratuit-bruxelles", "destination": "/contact", "permanent": true },
+    { "source": "/plomberie", "destination": "/", "permanent": true },
+    { "source": "/parquet", "destination": "/", "permanent": true },
+    { "source": "/batiment", "destination": "/", "permanent": true },
+    { "source": "/realisations", "destination": "/", "permanent": true }
   ]
 }

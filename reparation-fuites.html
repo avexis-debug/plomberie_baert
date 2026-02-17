@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réparation de fuites | Plomberie Baert</title>
+    <meta name="description" content="Réparation de fuites d'eau rapide et professionnelle. Plomberie Baert intervient en Flandre et région d'Anvers. Service d'urgence 24h/24.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="public/Logo Plomberie Baert.png">
+
+    <meta property="og:title" content="Réparation de fuites | Plomberie Baert">
+    <meta property="og:description" content="Réparation de fuites d'eau rapide et professionnelle en Flandre et région d'Anvers.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:site_name" content="Plomberie Baert">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand': '#0891b2',
+              'brand-dark': '#0e7490',
+              'brand-light': '#06b6d4',
+              'accent': '#f97316',
+              'accent-dark': '#ea580c',
+              'dark': '#1a2a4a',
+              'cream': '#f5f0e8',
+              'bg-soft': '#fdfbf7',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-bg-soft text-dark">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white py-3 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="flex items-center gap-3">
+                        <img src="public/Logo Plomberie Baert.png" alt="Plomberie Baert" class="h-10 w-auto">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/" class="nav-link text-[13px] font-medium tracking-wide text-dark/60 hover:text-brand transition-colors duration-200">Accueil</a>
+                        <a href="/#services" class="nav-link text-[13px] font-medium tracking-wide text-dark/60 hover:text-brand transition-colors duration-200">Services</a>
+                        <a href="/#zone" class="nav-link text-[13px] font-medium tracking-wide text-dark/60 hover:text-brand transition-colors duration-200">Zone d'intervention</a>
+                        <a href="/#avis" class="nav-link text-[13px] font-medium tracking-wide text-dark/60 hover:text-brand transition-colors duration-200">Avis</a>
+                        <a href="/#apropos" class="nav-link text-[13px] font-medium tracking-wide text-dark/60 hover:text-brand transition-colors duration-200">À propos</a>
+                        <a href="/contact" class="nav-link text-[13px] font-medium tracking-wide text-dark/60 hover:text-brand transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-dark p-2">
+                        <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-xl absolute top-full left-0 w-full border-b border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/" class="mobile-link block px-3 py-2 text-sm font-normal text-dark hover:bg-brand/10 rounded-md">Accueil</a>
+                <a href="/#services" class="mobile-link block px-3 py-2 text-sm font-normal text-dark hover:bg-brand/10 rounded-md">Services</a>
+                <a href="/#zone" class="mobile-link block px-3 py-2 text-sm font-normal text-dark hover:bg-brand/10 rounded-md">Zone d'intervention</a>
+                <a href="/#avis" class="mobile-link block px-3 py-2 text-sm font-normal text-dark hover:bg-brand/10 rounded-md">Avis</a>
+                <a href="/#apropos" class="mobile-link block px-3 py-2 text-sm font-normal text-dark hover:bg-brand/10 rounded-md">À propos</a>
+                <a href="/contact" class="mobile-link block px-3 py-2 text-sm font-normal text-dark hover:bg-brand/10 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="pt-28 pb-16 md:pt-36 md:pb-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <span class="text-brand font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Nos services</span>
+                    <h1 class="text-3xl md:text-5xl font-bold text-dark tracking-tight mb-6">Réparation de fuites</h1>
+                    <p class="text-lg text-dark/60 leading-relaxed">
+                        Vous avez une fuite d'eau ? Notre équipe intervient rapidement pour localiser et réparer tous types de fuites. Que ce soit un robinet qui goutte, une canalisation percée ou un tuyau éclaté, nous sommes là pour vous.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENT -->
+        <section class="py-12 md:py-24 bg-bg-soft">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-dark">Intervention rapide en cas de fuite</h2>
+                        <p class="text-dark/70 leading-relaxed">
+                            Une fuite d'eau peut causer des dégâts importants si elle n'est pas traitée rapidement. Chez Plomberie Baert, nous comprenons l'urgence de la situation et nous intervenons dans les plus brefs délais pour minimiser les dommages.
+                        </p>
+                        <p class="text-dark/70 leading-relaxed">
+                            Nos plombiers sont équipés du matériel nécessaire pour réparer tout type de fuite : robinetterie, canalisations, raccords, joints, chasse d'eau, et plus encore. Nous utilisons des matériaux de qualité pour garantir une réparation durable.
+                        </p>
+                        <h3 class="text-xl font-bold text-dark pt-4">Nos interventions comprennent :</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-dark/70"><svg class="w-5 h-5 text-brand flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Réparation de robinets et mitigeurs</li>
+                            <li class="flex items-center gap-3 text-dark/70"><svg class="w-5 h-5 text-brand flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Réparation de canalisations</li>
+                            <li class="flex items-center gap-3 text-dark/70"><svg class="w-5 h-5 text-brand flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Remplacement de joints et raccords</li>
+                            <li class="flex items-center gap-3 text-dark/70"><svg class="w-5 h-5 text-brand flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Réparation de chasse d'eau</li>
+                            <li class="flex items-center gap-3 text-dark/70"><svg class="w-5 h-5 text-brand flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Colmatage de fuites en urgence</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl p-8 border border-gray-100">
+                            <h3 class="text-xl font-bold text-dark mb-4">Pourquoi choisir Plomberie Baert ?</h3>
+                            <ul class="space-y-4 text-dark/70">
+                                <li class="flex items-start gap-3">
+                                    <span class="w-8 h-8 rounded-full bg-brand/10 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
+                                    <span><strong class="text-dark">Service 24h/24</strong> - Disponible jour et nuit pour les urgences</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="w-8 h-8 rounded-full bg-brand/10 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
+                                    <span><strong class="text-dark">Devis transparent</strong> - Pas de frais cachés</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="w-8 h-8 rounded-full bg-brand/10 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></span>
+                                    <span><strong class="text-dark">Plombiers certifiés</strong> - Expérience et professionnalisme</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-dark rounded-2xl p-8 text-center">
+                            <p class="text-white/80 text-sm mb-4">Besoin d'une réparation urgente ?</p>
+                            <a href="tel:" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-semibold text-sm rounded-lg hover:bg-accent-dark transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                                Appelez-nous
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 text-dark pt-12 pb-8 md:pt-20 md:pb-10 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 md:gap-12 md:mb-16">
+                <div class="flex flex-col">
+                    <img src="public/Logo Plomberie Baert.png" alt="Plomberie Baert" class="h-10 w-auto mb-4">
+                    <p class="text-dark/60 text-sm font-medium leading-relaxed">
+                        Plombier expérimenté en Flandre occidentale, Flandre orientale et dans la région d'Anvers.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-dark">Nos services</h4>
+                    <ul class="space-y-3 text-dark/70 font-medium text-sm">
+                        <li><a href="/chauffage" class="hover:text-brand transition-colors">Chauffage</a></li>
+                        <li><a href="/detection-fuites" class="hover:text-brand transition-colors">Détection de fuites</a></li>
+                        <li><a href="/reparation-fuites" class="hover:text-brand transition-colors">Réparation de fuites</a></li>
+                        <li><a href="/debouchage" class="hover:text-brand transition-colors">Débouchage</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-dark">Zone d'intervention</h4>
+                    <ul class="space-y-2 text-dark/70 font-medium text-sm">
+                        <li>Flandre occidentale</li>
+                        <li>Flandre orientale</li>
+                        <li>Région d'Anvers</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-dark">Coordonnées</h4>
+                    <ul class="space-y-3 text-dark/70 font-medium text-sm">
+                        <li>Plomberie Baert</li>
+                        <li><a href="tel:" class="hover:text-brand transition-colors">[TÉLÉPHONE]</a></li>
+                        <li><a href="mailto:" class="hover:text-brand transition-colors">[EMAIL]</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-6 md:pt-10 border-t border-dark/10 text-center space-y-4">
+                <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-[10px] font-semibold tracking-[0.1em] text-dark/30">
+                    <a href="/mentions-legales" class="hover:text-dark transition-colors">Mentions légales</a>
+                    <span class="text-dark/15">|</span>
+                    <a href="/politique-confidentialite" class="hover:text-dark transition-colors">Confidentialité</a>
+                    <span class="text-dark/15">|</span>
+                    <a href="/politique-cookies" class="hover:text-dark transition-colors">Cookies</a>
+                </div>
+                <div id="footer-year" class="text-dark/25 text-[10px] uppercase font-semibold tracking-[0.2em]"></div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="hidden fixed bottom-4 left-4 z-50 max-w-sm bg-white border border-gray-200 rounded-2xl shadow-xl p-6">
+        <p class="text-sm text-dark font-medium mb-4 leading-relaxed">Ce site utilise des cookies pour améliorer votre expérience. Voir notre <a href="/politique-confidentialite" class="text-brand hover:underline">politique de confidentialité</a>.</p>
+        <div class="flex gap-3">
+            <button id="cookie-accept" class="px-5 py-2 bg-brand text-white text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-brand-dark transition-colors">Accepter</button>
+            <button id="cookie-refuse" class="px-5 py-2 bg-gray-100 text-dark text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-gray-200 transition-colors">Refuser</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

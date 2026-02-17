@@ -19,7 +19,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #cc2229;
+    background: #0891b2;
     border-radius: 4px;
 }
 
@@ -30,8 +30,8 @@ html {
 /* Form inputs */
 input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: #cc2229;
-    box-shadow: 0 0 0 3px rgba(204, 34, 41, 0.1);
+    border-color: #0891b2;
+    box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.1);
 }
 
 /* Smooth page transitions */
