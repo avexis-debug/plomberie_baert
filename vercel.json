@@ -4,9 +4,14 @@
   "framework": null,
   "cleanUrls": true,
   "redirects": [
-    { "source": "/interieur", "destination": "/travaux-interieurs-liege", "permanent": true },
-    { "source": "/exterieur", "destination": "/travaux-exterieurs-liege", "permanent": true },
-    { "source": "/realisations", "destination": "/realisations-travaux-liege", "permanent": true },
-    { "source": "/contact", "destination": "/devis-gratuit-liege", "permanent": true }
+    { "source": "/plomberie", "destination": "/plomberie-bruxelles", "permanent": true },
+    { "source": "/parquet", "destination": "/parquet-bruxelles", "permanent": true },
+    { "source": "/batiment", "destination": "/batiment-bruxelles", "permanent": true },
+    { "source": "/realisations", "destination": "/realisations-bruxelles", "permanent": true },
+    { "source": "/contact", "destination": "/devis-gratuit-bruxelles", "permanent": true },
+    { "source": "/travaux-interieurs-liege", "destination": "/plomberie-bruxelles", "permanent": true },
+    { "source": "/travaux-exterieurs-liege", "destination": "/batiment-bruxelles", "permanent": true },
+    { "source": "/realisations-travaux-liege", "destination": "/realisations-bruxelles", "permanent": true },
+    { "source": "/devis-gratuit-liege", "destination": "/devis-gratuit-bruxelles", "permanent": true }
   ]
 }

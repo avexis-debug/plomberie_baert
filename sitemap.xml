@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ts-pro-tech.vercel.app/</loc>
+    <loc>https://ivanwork.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ts-pro-tech.vercel.app/travaux-interieurs-liege</loc>
+    <loc>https://ivanwork.vercel.app/plomberie-bruxelles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ts-pro-tech.vercel.app/travaux-exterieurs-liege</loc>
+    <loc>https://ivanwork.vercel.app/parquet-bruxelles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ts-pro-tech.vercel.app/realisations-travaux-liege</loc>
+    <loc>https://ivanwork.vercel.app/batiment-bruxelles</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ivanwork.vercel.app/realisations-bruxelles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ts-pro-tech.vercel.app/devis-gratuit-liege</loc>
+    <loc>https://ivanwork.vercel.app/devis-gratuit-bruxelles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
