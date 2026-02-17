@@ -53,6 +53,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Cookie banner
+    var cookieBanner = document.getElementById('cookie-banner');
+    var cookieAccept = document.getElementById('cookie-accept');
+    var cookieRefuse = document.getElementById('cookie-refuse');
+
+    if (cookieBanner && !localStorage.getItem('cookies-accepted')) {
+        cookieBanner.classList.remove('hidden');
+    }
+
+    if (cookieAccept) {
+        cookieAccept.addEventListener('click', function () {
+            localStorage.setItem('cookies-accepted', 'true');
+            cookieBanner.classList.add('hidden');
+        });
+    }
+
+    if (cookieRefuse) {
+        cookieRefuse.addEventListener('click', function () {
+            localStorage.setItem('cookies-accepted', 'false');
+            cookieBanner.classList.add('hidden');
+        });
+    }
+
     // Portfolio filter (realisations page)
     const filterBtns = document.querySelectorAll('[data-filter]');
     const projectCards = document.querySelectorAll('[data-category]');
