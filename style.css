@@ -1,8 +1,8 @@
 body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
-    background-color: #fdfaf5;
-    color: #064e3b;
+    background-color: #fdfbf7;
+    color: #1a2a4a;
 }
 
 html {
@@ -15,23 +15,23 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #fdfaf5;
+    background: #fdfbf7;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #14532d;
+    background: #cc2229;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #f2e1c1;
+    background: #1a2a4a;
 }
 
 /* Form inputs */
 input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: #14532d;
-    box-shadow: 0 0 0 3px rgba(20, 83, 45, 0.1);
+    border-color: #cc2229;
+    box-shadow: 0 0 0 3px rgba(204, 34, 41, 0.1);
 }
 
 /* Smooth page transitions */
