@@ -4,12 +4,12 @@
   "framework": null,
   "cleanUrls": true,
   "redirects": [
-    { "source": "/plomberie-bruxelles", "destination": "/", "permanent": true },
+    { "source": "/plomberie-bruxelles", "destination": "/reparation-fuites", "permanent": true },
     { "source": "/parquet-bruxelles", "destination": "/", "permanent": true },
     { "source": "/batiment-bruxelles", "destination": "/", "permanent": true },
     { "source": "/realisations-bruxelles", "destination": "/", "permanent": true },
     { "source": "/devis-gratuit-bruxelles", "destination": "/contact", "permanent": true },
-    { "source": "/plomberie", "destination": "/", "permanent": true },
+    { "source": "/plomberie", "destination": "/reparation-fuites", "permanent": true },
     { "source": "/parquet", "destination": "/", "permanent": true },
     { "source": "/batiment", "destination": "/", "permanent": true },
     { "source": "/realisations", "destination": "/", "permanent": true }

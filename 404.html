@@ -4,41 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page introuvable | Plomberie Baert</title>
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, follow">
     <link rel="icon" type="image/png" href="public/Logo Plomberie Baert.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script>
-      tailwind.config = { theme: { extend: { colors: { 'brand': '#0891b2', 'brand-dark': '#0e7490', 'accent': '#f97316', 'accent-dark': '#ea580c', 'dark': '#1a2a4a', 'cream': '#f5f0e8', 'bg-soft': '#fdfbf7' } } } }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'logo-cream': '#f5f0e8',
+              'logo-green': '#cc2229',
+              'logo-dark-green': '#1a2a4a',
+              'bg-soft': '#fdfbf7',
+              'logo-yellow': '#f0b429',
+            }
+          }
+        }
+      }
     </script>
 </head>
-<body class="bg-bg-soft text-dark">
-    <nav id="navbar" class="fixed w-full z-50 bg-white py-3 border-b border-gray-100">
+<body class="bg-bg-soft text-logo-dark-green">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-logo-cream py-3">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
-                <a href="/" class="flex items-center gap-3"><img src="public/Logo Plomberie Baert.png" alt="Plomberie Baert" class="h-10 w-auto"></a>
+                <div class="flex-shrink-0 flex items-center"><a href="/"><img src="public/Logo Plomberie Baert.png" alt="Plomberie Baert Logo" class="h-12 w-auto"></a></div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="/" class="text-[13px] font-medium text-dark/60 hover:text-brand transition-colors">Accueil</a>
-                        <a href="/contact" class="text-[13px] font-medium text-dark/60 hover:text-brand transition-colors">Contact</a>
+                        <a href="/" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Accueil</a>
+                        <a href="/reparation-fuites" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Réparation de fuites</a>
+                        <a href="/chauffage" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Chauffage</a>
+                        <a href="/debouchage" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Débouchage</a>
+                        <a href="/detection-fuites" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Détection de fuites</a>
+                        <a href="/contact" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Contact</a>
                     </div>
                 </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-logo-dark-green p-2">
+                        <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-logo-cream shadow-xl absolute top-full left-0 w-full border-b border-logo-dark-green/10">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Accueil</a>
+                <a href="/reparation-fuites" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Réparation de fuites</a>
+                <a href="/chauffage" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Chauffage</a>
+                <a href="/debouchage" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Débouchage</a>
+                <a href="/detection-fuites" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Détection de fuites</a>
+                <a href="/contact" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main class="min-h-screen flex items-center justify-center">
-        <div class="text-center px-4">
-            <p class="text-[10rem] md:text-[15rem] font-bold text-brand/10 leading-none select-none">404</p>
-            <h1 class="text-2xl md:text-4xl font-bold text-dark -mt-10 mb-4">Page introuvable</h1>
-            <p class="text-dark/60 text-lg mb-8 max-w-md mx-auto">La page que vous recherchez n'existe pas ou a été déplacée.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/" class="px-8 py-4 bg-brand text-white font-semibold text-sm rounded-lg hover:bg-brand-dark transition-colors">Retour à l'accueil</a>
-                <a href="/contact" class="px-8 py-4 bg-white border border-gray-200 text-dark font-semibold text-sm rounded-lg hover:bg-gray-50 transition-colors">Contactez-nous</a>
+    <main>
+        <section class="min-h-[80vh] flex items-center justify-center px-4">
+            <div class="text-center max-w-lg">
+                <p class="text-[120px] md:text-[180px] font-bold text-logo-cream leading-none select-none">404</p>
+                <h1 class="text-2xl md:text-4xl font-bold text-logo-dark-green tracking-tighter uppercase -mt-4 md:-mt-8 mb-4">Page introuvable</h1>
+                <p class="text-logo-dark-green/60 font-medium mb-10 leading-relaxed">
+                    La page que vous cherchez n'existe pas ou a été déplacée.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/" class="px-8 py-4 bg-logo-green text-logo-cream font-semibold uppercase tracking-widest text-sm rounded-md transition-all hover:bg-logo-dark-green text-center shadow-lg">
+                        Retour à l'accueil
+                    </a>
+                    <a href="/contact" class="px-8 py-4 bg-white border border-logo-green/20 text-logo-dark-green font-semibold text-sm rounded-md hover:border-logo-green transition-all text-center shadow-sm">
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-logo-cream/30 text-logo-dark-green pt-12 pb-8 md:pt-20 md:pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 md:gap-12 md:mb-16">
+                <div class="flex flex-col">
+                    <img src="public/Logo Plomberie Baert.png" alt="Plomberie Baert" class="h-16 w-auto max-w-[10rem] object-contain self-start mb-6">
+                    <p class="text-logo-dark-green/60 text-sm font-medium leading-relaxed">Plombier expérimenté en Flandre et région d'Anvers. Réparation de fuites, chauffage, débouchage et détection de fuites.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Navigation</h4>
+                    <ul class="space-y-3 text-logo-dark-green/70 font-medium text-sm">
+                        <li><a href="/" class="hover:text-logo-green transition-colors">Accueil</a></li>
+                        <li><a href="/reparation-fuites" class="hover:text-logo-green transition-colors">Réparation de fuites</a></li>
+                        <li><a href="/chauffage" class="hover:text-logo-green transition-colors">Chauffage</a></li>
+                        <li><a href="/debouchage" class="hover:text-logo-green transition-colors">Débouchage</a></li>
+                        <li><a href="/detection-fuites" class="hover:text-logo-green transition-colors">Détection de fuites</a></li>
+                        <li><a href="/contact" class="hover:text-logo-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Contact</h4>
+                    <ul class="space-y-3 text-logo-dark-green/70 font-medium text-sm">
+                        <li><a href="tel:" class="hover:text-logo-green transition-colors">[TÉLÉPHONE]</a></li>
+                        <li><a href="mailto:" class="hover:text-logo-green transition-colors">[EMAIL]</a></li>
+                        <li>Flandre et région d'Anvers</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Zone d'intervention</h4>
+                    <ul class="space-y-2 text-logo-dark-green/70 font-medium text-sm">
+                        <li>Flandre occidentale</li>
+                        <li>Flandre orientale</li>
+                        <li>Région d'Anvers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-6 md:pt-10 border-t border-logo-dark-green/10 text-center space-y-4">
+                <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-[10px] font-semibold tracking-[0.1em] text-logo-dark-green/30">
+                    <a href="/mentions-legales" class="hover:text-logo-dark-green transition-colors">Mentions légales</a>
+                    <span class="text-logo-dark-green/15">|</span>
+                    <a href="/politique-confidentialite" class="hover:text-logo-dark-green transition-colors">Confidentialité</a>
+                    <span class="text-logo-dark-green/15">|</span>
+                    <a href="/politique-cookies" class="hover:text-logo-dark-green transition-colors">Cookies</a>
+                </div>
+                <div id="footer-year" class="text-logo-dark-green/25 text-[10px] uppercase font-semibold tracking-[0.2em]"></div>
             </div>
         </div>
-    </main>
+    </footer>
 
     <script src="script.js"></script>
 </body>
