@@ -81,17 +81,32 @@ document.addEventListener('DOMContentLoaded', function () {
     const projectCards = document.querySelectorAll('[data-category]');
 
     if (filterBtns.length > 0 && projectCards.length > 0) {
+        var filterColors = {
+            all: { bg: 'bg-logo-dark-green', text: 'text-white' },
+            plomberie: { bg: 'bg-blue-500', text: 'text-white', border: 'border-blue-500' },
+            parquet: { bg: 'bg-amber-500', text: 'text-white', border: 'border-amber-500' },
+            batiment: { bg: 'bg-red-500', text: 'text-white', border: 'border-red-500' }
+        };
+
         filterBtns.forEach(function (btn) {
             btn.addEventListener('click', function () {
                 const filter = btn.getAttribute('data-filter');
 
-                // Update active button
+                // Reset all buttons
                 filterBtns.forEach(function (b) {
-                    b.classList.remove('bg-logo-green', 'text-logo-cream');
-                    b.classList.add('bg-white', 'text-logo-dark-green');
+                    var f = b.getAttribute('data-filter');
+                    var c = filterColors[f];
+                    b.classList.remove(c.bg, c.text);
+                    if (f === 'all') {
+                        b.classList.add('bg-white', 'text-logo-dark-green');
+                    } else {
+                        b.classList.add('bg-white', 'text-logo-dark-green');
+                    }
                 });
+                // Activate clicked button
+                var activeColor = filterColors[filter];
                 btn.classList.remove('bg-white', 'text-logo-dark-green');
-                btn.classList.add('bg-logo-green', 'text-logo-cream');
+                btn.classList.add(activeColor.bg, activeColor.text);
 
                 // Filter cards
                 projectCards.forEach(function (card) {
