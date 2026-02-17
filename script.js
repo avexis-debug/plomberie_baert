@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.getElementById('navbar');
-    const navBrand = document.getElementById('nav-brand');
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIconOpen = document.getElementById('menu-icon-open');
@@ -11,18 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // Footer year
     footerYear.textContent = '\u00A9 ' + new Date().getFullYear() + ' TS PRO-TECH. VOTRE PARTENAIRE AM\u00C9NAGEMENT & FINITION.';
 
-    // Navbar scroll effect
+    // Navbar scroll effect - stays black, adds shadow on scroll
     window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
-            navbar.classList.remove('bg-transparent', 'py-5');
-            navbar.classList.add('bg-white/95', 'shadow-md', 'py-3', 'border-b', 'border-logo-green/10');
-            navBrand.classList.remove('text-logo-green/90');
-            navBrand.classList.add('text-logo-green');
+            navbar.classList.add('shadow-lg', 'py-2');
+            navbar.classList.remove('py-3');
         } else {
-            navbar.classList.remove('bg-white/95', 'shadow-md', 'py-3', 'border-b', 'border-logo-green/10');
-            navbar.classList.add('bg-transparent', 'py-5');
-            navBrand.classList.remove('text-logo-green');
-            navBrand.classList.add('text-logo-green/90');
+            navbar.classList.remove('shadow-lg', 'py-2');
+            navbar.classList.add('py-3');
         }
     });
 
